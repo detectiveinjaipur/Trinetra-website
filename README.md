@@ -27,20 +27,20 @@ Clean URLs are enabled, so pages are served at `/about`, `/services`, etc. (no `
 Run these find-and-replace commands inside the project folder (Mac/Linux),
 or do the equivalent find-and-replace in your code editor.
 
-**1. Your domain** (currently `www.trinetradetectives.in`):
+**1. Your domain** (currently `trinetrajaipur.com`):
 ```
-grep -rl "trinetradetectives.in" . | xargs sed -i '' "s/www\.trinetradetectives\.in/YOURDOMAIN.com/g"
+grep -rl "trinetrajaipur.com" . | xargs sed -i '' "s/www\.trinetradetectives\.in/YOURDOMAIN.com/g"
 ```
 (On Linux, use `sed -i` without the `''`.)
 
 **2. WhatsApp number** — open `js/main.js` and edit the `WHATSAPP` and
 `PHONE_DISPLAY` constants at the top. Then replace the number everywhere else:
 ```
-grep -rl "919829000000" . | xargs sed -i '' "s/919829000000/91XXXXXXXXXX/g"
+grep -rl "573502853075" . | xargs sed -i '' "s/573502853075/91XXXXXXXXXX/g"
 grep -rl "98290 00000" . | xargs sed -i '' "s/98290 00000/XXXXX XXXXX/g"
 ```
 
-**3. Email & address** — replace `info@trinetradetectives.in` and the
+**3. Email & address** — replace `detectiveinjaipurr@pm.me` and the
 `C-Scheme, Jaipur, Rajasthan 302001` address (in the footer of every page
 and on the contact page).
 
